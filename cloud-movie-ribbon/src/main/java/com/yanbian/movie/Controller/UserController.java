@@ -19,7 +19,7 @@ public class UserController {
 
 	@RequestMapping("movie/{id}")
 	public User show(@PathVariable int id){
-		String url="http://cloud-movie/findBookByid?id="+id;
+		String url="http://cloud-movie/findBookByid/"+id;
 		System.out.println(url);
 		User user=restTemplate.getForObject(url,User.class);
 		return user;

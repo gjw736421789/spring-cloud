@@ -15,6 +15,7 @@ public class UserController {
 
 	@RequestMapping("findBookByid/{id}")
 	public User fingall(@PathVariable int id){
+		System.out.println("2222222");
 		User user = userSsevice.findBookByid(id);
 		return user;
 	}
@@ -22,7 +23,7 @@ public class UserController {
 	@RequestMapping("test")
 //	public String test(){
 		public User test(){
-//		System.out.println("21111111111111111111");
+		System.out.println("21111111111111111111");
 		User user =new User();
 		user.setAnswer("哈哈");
 		user.setEmail("736421789@qq.com");

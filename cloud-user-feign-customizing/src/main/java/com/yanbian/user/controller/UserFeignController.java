@@ -13,10 +13,9 @@ public class UserFeignController {
 //	@Autowired
 //	private UserFeignClient2 userFeignClient2;
 
-	@RequestMapping(value = "feignInfo/{id}",method = RequestMethod.GET)
-	public User findById(@PathVariable("id") int id) {
-
-		return this.userFeignClient.findById(id);
+	@RequestMapping(value = "feign/{id}",method = RequestMethod.GET)
+	public User find(@PathVariable("id") int id) {
+		return userFeignClient.find(id);
 	}
 	@RequestMapping("/test")
 	public User show() {

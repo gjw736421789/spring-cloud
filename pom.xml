@@ -15,13 +15,13 @@
     <name>spring-cloud</name>
     <description>Demo project for Spring Boot</description>
     <modules>
+        <module>cloud-eureka</module>
         <module>cloud-movie</module>
         <module>cloud-movie-ribbon</module>
+        <module>cloud-movie-ribbon-customizing</module>
         <module>cloud-user-feign</module>
         <module>cloud-user-feign-customizing</module>
         <module>cloud-user</module>
-        <module>cloud-eureka</module>
-        <module>cloud-movie-ribbon-customizing</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

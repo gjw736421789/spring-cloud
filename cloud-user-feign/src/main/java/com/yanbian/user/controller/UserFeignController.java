@@ -17,7 +17,7 @@ public class UserFeignController {
 	@RequestMapping("/feignInfo/{id}")
 	public User feignInfo(@PathVariable("id") int id) {
 
-		return this.userFeignClient.findById(id);
+		return this.userFeignClient.find(id);
 	}
 	@RequestMapping("/test")
 	public User show() {

@@ -19,7 +19,7 @@ public interface UserFeignClient {
 	 */
 
 	@RequestMapping(value = "findBookByid/{id}", method = RequestMethod.GET)
-	public User findById(@PathVariable("id") int id);
+	public User find(@PathVariable("id") int id);
 
 	@RequestMapping(value = "test", method = RequestMethod.GET)
 	public User show();

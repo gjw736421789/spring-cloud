@@ -25,7 +25,7 @@ public interface UserFeignClient {
 
 //	@RequestMapping(value = "findBookByid/{id}", method = RequestMethod.GET)
 	@RequestLine("GET /findBookByid/{id}")
-	public User findById(@RequestParam("id") int id);
+	public User find(@RequestParam("id") int id);
 
 //	@RequestMapping(value = "test", method = RequestMethod.GET)
 	@RequestLine("GET /test")
