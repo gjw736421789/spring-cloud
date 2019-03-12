@@ -2,6 +2,7 @@ package com.yanbian.user.controller;
 
 import com.yanbian.user.entity.User;
 import com.yanbian.user.service.UserFeignClient;
+import com.yanbian.user.service.UserFeignClient2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,8 +11,8 @@ public class UserFeignController {
 
 	@Autowired
 	private UserFeignClient userFeignClient;
-//	@Autowired
-//	private UserFeignClient2 userFeignClient2;
+	@Autowired
+	private UserFeignClient2 userFeignClient2;
 
 	@RequestMapping(value = "feign/{id}",method = RequestMethod.GET)
 	public User find(@PathVariable("id") int id) {
@@ -23,10 +24,10 @@ public class UserFeignController {
 		return this.userFeignClient.show();
 	}
 
-/*	@GetMapping("/{serviceName}")
+	@GetMapping("/{serviceName}")
 	public String getServiceInfoByserviceName(@PathVariable String serviceName){
 		return userFeignClient2.getServiceInfoByserviceName(serviceName);
-	}*/
+	}
 
 
 }
