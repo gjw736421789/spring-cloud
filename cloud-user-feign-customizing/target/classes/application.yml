@@ -1,0 +1,21 @@
+spring :
+  application:
+    name: cloud-user-customizing
+  main:
+    allow-bean-definition-overriding: true     #启用覆盖
+server:
+  port: 8051
+  #  servlet :
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+#    日志
+logging:
+  level:
+    com.yanbian.user.service.UserFeignClient: debug
+
