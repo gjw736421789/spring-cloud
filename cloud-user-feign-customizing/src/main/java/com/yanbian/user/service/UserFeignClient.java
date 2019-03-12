@@ -2,15 +2,9 @@ package com.yanbian.user.service;
 
 import com.yanbian.user.config.Configuration1;
 import com.yanbian.user.entity.User;
+import feign.Param;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import javax.websocket.server.PathParam;
-
 /**
  * name是服务名字
  */
@@ -25,7 +19,7 @@ public interface UserFeignClient {
 
 //	@RequestMapping(value = "findBookByid/{id}", method = RequestMethod.GET)
 	@RequestLine("GET /findBookByid/{id}")
-	public User find(@RequestParam("id") int id);
+	public User find(@Param("id") int id);
 
 //	@RequestMapping(value = "test", method = RequestMethod.GET)
 	@RequestLine("GET /test")
