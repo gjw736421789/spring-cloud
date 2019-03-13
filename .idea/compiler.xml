@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
+        <module name="eureka-ha" />
         <module name="movie" />
         <module name="movie-ribbon" />
         <module name="movie-ribbon-customizing" />
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
+      <module name="eureka-ha" options="-parameters" />
       <module name="movie" options="-parameters" />
       <module name="movie-ribbon" options="-parameters" />
       <module name="movie-ribbon-customizing" options="-parameters" />

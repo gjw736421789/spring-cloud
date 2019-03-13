@@ -3,9 +3,9 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-ha" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-movie" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-movie-ribbon" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-movie-ribbon-customizing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-movie-ribbon-customizing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-user-feign" charset="UTF-8" />

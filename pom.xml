@@ -16,6 +16,7 @@
     <description>Demo project for Spring Boot</description>
     <modules>
         <module>cloud-eureka</module>
+		<module>cloud-eureka-ha</module>
         <module>cloud-movie</module>
         <module>cloud-movie-ribbon</module>
         <module>cloud-movie-ribbon-customizing</module>

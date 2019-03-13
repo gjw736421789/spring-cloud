@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: EUREKA-HA
+server:
+  port: 8763
+eureka:
+  instance:
+    hostname: pree3
+  client:
+    #register-with-eureka: false
+    #fetch-registry: false
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
